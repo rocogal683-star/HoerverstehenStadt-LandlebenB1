@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hörverstehen B1 – Johanna: Landleben und Stadtleben</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f7f6;
+    }
+    .transcript-reveal {
+      animation: fadeIn 0.35s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .option-card {
+      transition: all 0.2s ease;
+    }
+    .option-card:hover:not(.locked) {
+      border-color: #0d9488;
+      background-color: #f0fdfa;
+    }
+  </style>
+</head>
+<body class="text-slate-800 antialiased pb-16">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-800 via-teal-700 to-emerald-700 text-white shadow-md">
+    <div class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/20 backdrop-blur-sm tracking-wide uppercase">
+          <i class="fa-solid fa-headphones"></i> Hörverstehen · Niveau B1
+        </span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+        Aufgabe 2: Johanna – Landleben und Stadtleben
+      </h1>
+      <p class="mt-2 text-teal-100 text-sm sm:text-base max-w-2xl">
+        Sie hören den Text zweimal. Wählen Sie für jede Aufgabe die richtige Lösung (a, b oder c). Nur eine Aussage ist jeweils richtig. Aufgabe 0 ist ein Beispiel.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-5">
+
+    <!-- Audio Player & Progress Bar -->
+    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">
+          <i class="fa-solid fa-volume-high text-teal-600 mr-1.5"></i> Hörtext anhören
+        </span>
+        <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full" id="progress-text">
+          0 / 7 gelöst
+        </span>
+      </div>
+
+      <!-- Embedded Google Drive Audio Player -->
+      <div class="w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+        <iframe
+          src="https://drive.google.com/file/d/1sMZiTSbAMT-ef0Yzl2M-iJMvSqLuvcYf/preview"
+          class="w-full h-20 border-0"
+          allow="autoplay"
+          title="Hörtext Johanna"
+        ></iframe>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="mt-4">
+        <div class="w-full bg-slate-200 rounded-full h-2 overflow-hidden">
+          <div id="progress-bar" class="bg-teal-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example Item (0) -->
+    <section class="bg-amber-50/70 rounded-2xl shadow-sm border border-amber-200 p-5 sm:p-6 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs font-bold bg-amber-200/80 text-amber-900">
+          Beispiel · Aufgabe 0
+        </span>
+        <span class="text-xs font-semibold text-amber-800">Lösung: b</span>
+      </div>
+      <h2 class="text-base sm:text-lg font-semibold text-slate-800 mb-3">
+        0. Vorteile des Lebens auf dem Land, laut Johanna:
+      </h2>
+      <div class="space-y-2 text-sm">
+        <div class="p-3 rounded-xl border border-slate-200 bg-white/60 text-slate-500">
+          <span class="font-bold mr-2">a)</span> Viele Einkaufsmöglichkeiten und ein gutes Verkehrsnetz.
+        </div>
+        <div class="p-3 rounded-xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 font-medium flex items-center justify-between">
+          <div><span class="font-bold mr-2">b)</span> Man kann schnell neue Leute kennen lernen.</div>
+          <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+        </div>
+        <div class="p-3 rounded-xl border border-slate-200 bg-white/60 text-slate-500">
+          <span class="font-bold mr-2">c)</span> Viele Freizeitmöglichkeiten, z. B. Kinos und Restaurants.
+        </div>
+      </div>
+      <div class="mt-4 p-3.5 rounded-xl bg-white border border-amber-200 text-sm text-slate-700">
+        <p class="text-xs font-bold uppercase tracking-wider text-amber-800 mb-1">
+          <i class="fa-solid fa-quote-left mr-1"></i> Textstelle aus der Transkription:
+        </p>
+        <p class="italic leading-relaxed">
+          „... auf dem Land <mark class="bg-amber-200/80 px-1 rounded font-medium text-slate-900">lernt man auch viel schneller andere Leute kennen</mark>, so dass man sich nicht alleine fühlt.“
+        </p>
+      </div>
+    </section>
+
+    <!-- Questions Container -->
+    <div id="questions-container" class="space-y-6"></div>
+
+    <!-- Summary, Name Input & Submit Section -->
+    <section class="mt-8 bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-slate-100">
+        <div>
+          <h3 class="text-lg font-bold text-slate-800">Ergebnis absenden</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Beantworten Sie alle 7 Aufgaben, tragen Sie Ihren Namen ein und senden Sie Ihr Ergebnis ab.
+          </p>
+        </div>
+        <div class="sm:text-right mt-2 sm:mt-0">
+          <span class="block text-xs uppercase tracking-wider text-slate-500 font-semibold">Aktueller Punktestand</span>
+          <span id="score-display" class="text-2xl font-bold text-teal-700">0 / 7 Punkte</span>
+        </div>
+      </div>
+
+      <!-- Name Input & Submit Button Row -->
+      <div class="mt-5 flex flex-col sm:flex-row items-stretch sm:items-end gap-4">
+        <div class="flex-1">
+          <label for="student-name" class="block text-sm font-semibold text-slate-700 mb-1.5">
+            <i class="fa-solid fa-user-graduate text-teal-600 mr-1.5"></i> Vor- und Nachname: <span class="text-rose-500">*</span>
+          </label>
+          <input
+            type="text"
+            id="student-name"
+            placeholder="Bitte geben Sie Ihren Namen ein..."
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-sm transition"
+          />
+        </div>
+
+        <button
+          id="submit-btn"
+          onclick="submitResults()"
+          class="px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-semibold text-sm shadow-sm transition flex items-center justify-center gap-2 sm:w-auto"
+        >
+          <i class="fa-solid fa-paper-plane"></i> Ergebnisse senden
+        </button>
+      </div>
+
+      <p id="name-error" class="hidden text-xs text-rose-600 mt-2 font-medium">
+        <i class="fa-solid fa-circle-exclamation mr-1"></i> Bitte tragen Sie zuerst Ihren Namen ein.
+      </p>
+
+      <!-- Status Feedback -->
+      <div id="submit-status" class="hidden mt-4 p-4 rounded-xl text-sm font-medium"></div>
+
+      <!-- Full Transcript Toggle (available once all questions answered) -->
+      <div id="full-transcript-wrapper" class="hidden mt-6 pt-6 border-t border-slate-200">
+        <button
+          onclick="toggleFullTranscript()"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-900 transition"
+        >
+          <i class="fa-solid fa-file-lines"></i>
+          <span id="toggle-transcript-label">Gesamte Transkription anzeigen</span>
+        </button>
+        <div id="full-transcript-box" class="hidden mt-4 p-5 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-700 leading-relaxed space-y-3">
+          <p class="font-bold text-slate-900">Johanna: Landleben und Stadtleben (Vollständige Transkription)</p>
+          <p>
+            Auf dem Land zu leben, bietet oftmals viele gesundheitliche Vorteile. Man kann draußen in der Natur sich bewegen, es gibt viele Sportmöglichkeiten und ... auf dem Land lernt man auch viel schneller andere Leute kennen, so dass man. Ja, so, dass man sich nicht alleine fühlt. Die Einsamkeit ist vielleicht nicht ganz so groß, allerdings muss man sagen, dass die Infrastruktur und das öffentliche Verkehrsnetz auf dem Land oftmals sehr schlecht ist. Bei mir im Dorf bspw. haben wir keinen vernünftigen Supermarkt. Es gibt zwar Bauernläden, wo man Obst, Gemüse, Brot, Kuchen, mittlerweile auch Milch kaufen kann, aber alles andere, wie Hygieneartikel oder ... Shampoo, Teig, Mehl, das kann man auf dem Land oder bei uns nicht kaufen und somit muss man dann nochmal in die nächste Stadt fahren. Was bei uns jetzt glücklicherweise keinen großen Aufwand betreibt, aber oftmals ist es so, dass man, wenn man wirklich auf dem platten Land wohnt, muss man oft bis zu einer Stunde oder sogar länger fahren, um den nächsten Supermarkt zu erreichen. Und das ist natürlich ... und bringt einen sehr großen Nachteil mit sich. Genauso wie das öffentliche Verkehrsnetz, bei uns fährt glücklicherweise mittlerweile jede Stunde ein Bus, aber das war früher auch nicht so. Und wenn man wirklich auf den Bus angewiesen ist, lässt sich dann der Tag schwer planen. Man muss sich wirklich an diese Uhrzeiten halten und kann nicht sagen, okay ich fahre in 10 Minuten mal eben mit dem Bus in die Stadt, so wie beispielsweise in Berlin oder in Paris, wo man die Metro hat, die ständig fährt.
+          </p>
+          <p>
+            Das ist ein kleiner Nachteil, aber im Vergleich zum Stadtleben. Ist ja im, wenn man in einer Stadt lebt, kann man dort eben von dem guten und großen Verkehrsnetz profitieren. Es gibt dort auch andere Freizeitmöglichkeiten, wie beispielsweise Kino und man kann einfacher zum Arzt fahren, eine Apotheke besuchen, zum Friseur gehen. All diese alltäglichen Sachen lassen sich in einer Stadt viel besser organisieren. Der Nachteil des Stadtlebens ist jedoch das hohe Verkehrsaufkommen. Die Luft ist oftmals sehr verschmutzt auch ... in vielen Städten gibt es auch das Problem der Mülltrennung. Überall liegt viel Müll und das schadet dann zukünftig natürlich der Gesundheit und wenn man dann auf dem Land lebt, kann man mit einem guten Gewissen sich draußen im Wald oder am See hinsetzen oder man kann dort wandern und Fahrrad fahren und muss keine Sorge haben, dass man verschmutzte Luft einatmet.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx23btah451kMJ5z5p8cx_zYX0bhdOQ73DZU33Kiq56F0e_EGBz7JFcp-71uSdT9VN3XA/exec";
+
+    const questions = [
+      {
+        id: 1,
+        question: "1. Nachteile des Lebens auf dem Land, laut Johanna:",
+        options: {
+          a: "Die schmutzige Luft.",
+          b: "Der Müll in der Natur.",
+          c: "Schlechte Infrastruktur."
+        },
+        correct: "c",
+        transcriptSnippet: "„... allerdings muss man sagen, dass <mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>die Infrastruktur und das öffentliche Verkehrsnetz auf dem Land oftmals sehr schlecht ist</mark>.“"
+      },
+      {
+        id: 2,
+        question: "2. Was kann man in den Bauernläden kaufen?",
+        options: {
+          a: "Hygieneartikel, Mehl und Shampoo.",
+          b: "Obst, Gemüse und Brot.",
+          c: "Teig, Mehl und Kuchen."
+        },
+        correct: "b",
+        transcriptSnippet: "„Es gibt zwar Bauernläden, wo man <mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>Obst, Gemüse, Brot</mark>, Kuchen, mittlerweile auch Milch kaufen kann, aber alles andere, wie Hygieneartikel oder ... Shampoo, Teig, Mehl, das kann man auf dem Land oder bei uns nicht kaufen ...“"
+      },
+      {
+        id: 3,
+        question: "3. Manchmal muss man ... zum Supermarkt fahren.",
+        options: {
+          a: "... mehr als eine Stunde ...",
+          b: "... eine halbe Stunde ...",
+          c: "... anderthalb Stunden ..."
+        },
+        correct: "a",
+        transcriptSnippet: "„... aber oftmals ist es so, dass man, wenn man wirklich auf dem platten Land wohnt, muss man oft <mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>bis zu einer Stunde oder sogar länger fahren</mark>, um den nächsten Supermarkt zu erreichen.“"
+      },
+      {
+        id: 4,
+        question: "4. In Johannas Dorf fährt ... ein Bus.",
+        options: {
+          a: "... nur einmal am Tag ...",
+          b: "... alle 10 Minuten ...",
+          c: "... einmal die Stunde ..."
+        },
+        correct: "c",
+        transcriptSnippet: "„Genauso wie das öffentliche Verkehrsnetz, bei uns fährt glücklicherweise mittlerweile <mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>jede Stunde ein Bus</mark>, aber das war früher auch nicht so.“"
+      },
+      {
+        id: 5,
+        question: "5. Vorteile des Stadtlebens, laut Johanna:",
+        options: {
+          a: "Hohes Verkehrsaufkommen.",
+          b: "Gesünderes Leben.",
+          c: "Nähe zu z. B. Apotheken und Ärzten."
+        },
+        correct: "c",
+        transcriptSnippet: "„Es gibt dort auch andere Freizeitmöglichkeiten, wie beispielsweise Kino und <mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>man kann einfacher zum Arzt fahren, eine Apotheke besuchen</mark>, zum Friseur gehen.“"
+      },
+      {
+        id: 6,
+        question: "6. Als großes Problem in der Stadt sieht Johanna:",
+        options: {
+          a: "Das Verkehrsnetz.",
+          b: "Die Verschmutzung.",
+          c: "Die Freizeitmöglichkeiten."
+        },
+        correct: "a",
+        transcriptSnippet: "„<mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>Der Nachteil des Stadtlebens ist jedoch das hohe Verkehrsaufkommen.</mark> Die Luft ist oftmals sehr verschmutzt auch ... in vielen Städten gibt es auch das Problem der Mülltrennung.“"
+      },
+      {
+        id: 7,
+        question: "7. Das Leben auf dem Land ist gesünder, weil ...",
+        options: {
+          a: "... es Wälder und Seen gibt.",
+          b: "... der Müll getrennt wird.",
+          c: "... die Luft sauberer ist."
+        },
+        correct: "c",
+        transcriptSnippet: "„... und wenn man dann auf dem Land lebt, kann man mit einem guten Gewissen sich draußen im Wald oder am See hinsetzen oder man kann dort wandern und Fahrrad fahren und <mark class='bg-teal-200/80 px-1 rounded font-medium text-slate-900'>muss keine Sorge haben, dass man verschmutzte Luft einatmet</mark>.“"
+      }
+    ];
+
+    const userAnswers = {};
+    let isSubmitted = false;
+
+    function renderQuestions() {
+      const container = document.getElementById("questions-container");
+      container.innerHTML = "";
+
+      questions.forEach((q) => {
+        const card = document.createElement("section");
+        card.id = `question-card-${q.id}`;
+        card.className = "bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 transition";
+
+        let optionsHtml = "";
+        for (const [key, text] of Object.entries(q.options)) {
+          optionsHtml += `
+            <button
+              type="button"
+              id="opt-${q.id}-${key}"
+              onclick="selectOption(${q.id}, '${key}')"
+              class="option-card w-full text-left p-3.5 rounded-xl border border-slate-200 bg-white flex items-center justify-between gap-3 text-sm sm:text-base"
+            >
+              <div>
+                <span class="font-bold text-slate-700 mr-2">${key})</span>
+                <span>${text}</span>
+              </div>
+              <span id="icon-${q.id}-${key}" class="text-base"></span>
+            </button>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-slate-100 text-slate-700">
+              Aufgabe ${q.id} · 1 Punkt
+            </span>
+            <span id="status-badge-${q.id}" class="text-xs font-semibold"></span>
+          </div>
+          <h2 class="text-base sm:text-lg font-semibold text-slate-800 mb-4">
+            ${q.question}
+          </h2>
+          <div class="space-y-2.5">
+            ${optionsHtml}
+          </div>
+          <div id="transcript-${q.id}" class="hidden transcript-reveal mt-4 p-4 rounded-xl bg-teal-50/70 border border-teal-200 text-sm text-slate-700">
+            <p class="text-xs font-bold uppercase tracking-wider text-teal-800 mb-1">
+              <i class="fa-solid fa-quote-left mr-1"></i> Textstelle aus der Transkription:
+            </p>
+            <p class="italic leading-relaxed">${q.transcriptSnippet}</p>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function selectOption(qId, chosenKey) {
+      if (userAnswers[qId] !== undefined) return; // Lock once answered
+
+      const q = questions.find((item) => item.id === qId);
+      const isCorrect = chosenKey === q.correct;
+      userAnswers[qId] = {
+        chosen: chosenKey,
+        correct: q.correct,
+        isCorrect: isCorrect
+      };
+
+      // Style all options for this question
+      for (const key of Object.keys(q.options)) {
+        const btn = document.getElementById(`opt-${qId}-${key}`);
+        const icon = document.getElementById(`icon-${qId}-${key}`);
+        btn.classList.add("locked", "cursor-default");
+
+        if (key === q.correct) {
+          btn.classList.remove("border-slate-200", "bg-white");
+          btn.classList.add("border-2", "border-emerald-500", "bg-emerald-50", "text-emerald-950", "font-medium");
+          icon.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600"></i>`;
+        } else if (key === chosenKey && !isCorrect) {
+          btn.classList.remove("border-slate-200", "bg-white");
+          btn.classList.add("border-2", "border-rose-500", "bg-rose-50", "text-rose-950", "font-medium");
+          icon.innerHTML = `<i class="fa-solid fa-circle-xmark text-rose-600"></i>`;
+        } else {
+          btn.classList.add("opacity-60");
+        }
+      }
+
+      // Badge update
+      const badge = document.getElementById(`status-badge-${qId}`);
+      if (isCorrect) {
+        badge.innerHTML = `<span class="text-emerald-700"><i class="fa-solid fa-check mr-1"></i>Richtig (+1 Pkt.)</span>`;
+      } else {
+        badge.innerHTML = `<span class="text-rose-700"><i class="fa-solid fa-xmark mr-1"></i>Falsch (Richtig: ${q.correct})</span>`;
+      }
+
+      // Reveal transcript snippet
+      const transcriptBox = document.getElementById(`transcript-${qId}`);
+      transcriptBox.classList.remove("hidden");
+
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const answeredCount = Object.keys(userAnswers).length;
+      const correctCount = Object.values(userAnswers).filter((a) => a.isCorrect).length;
+      const total = questions.length;
+
+      document.getElementById("progress-text").textContent = `${answeredCount} / ${total} gelöst`;
+      document.getElementById("progress-bar").style.width = `${(answeredCount / total) * 100}%`;
+      document.getElementById("score-display").textContent = `${correctCount} / ${total} Punkte`;
+
+      if (answeredCount === total) {
+        document.getElementById("full-transcript-wrapper").classList.remove("hidden");
+      }
+    }
+
+    function toggleFullTranscript() {
+      const box = document.getElementById("full-transcript-box");
+      const label = document.getElementById("toggle-transcript-label");
+      const isHidden = box.classList.contains("hidden");
+      if (isHidden) {
+        box.classList.remove("hidden");
+        label.textContent = "Gesamte Transkription ausblenden";
+      } else {
+        box.classList.add("hidden");
+        label.textContent = "Gesamte Transkription anzeigen";
+      }
+    }
+
+    async function submitResults() {
+      const nameInput = document.getElementById("student-name");
+      const nameError = document.getElementById("name-error");
+      const statusBox = document.getElementById("submit-status");
+      const submitBtn = document.getElementById("submit-btn");
+
+      const studentName = nameInput.value.trim();
+      if (!studentName) {
+        nameError.classList.remove("hidden");
+        nameInput.focus();
+        return;
+      }
+      nameError.classList.add("hidden");
+
+      const answeredCount = Object.keys(userAnswers).length;
+      if (answeredCount < questions.length) {
+        statusBox.className = "mt-4 p-4 rounded-xl text-sm font-medium bg-amber-50 border border-amber-200 text-amber-900";
+        statusBox.innerHTML = `<i class="fa-solid fa-triangle-exclamation mr-1.5"></i> Bitte beantworten Sie zuerst alle ${questions.length} Aufgaben (aktuell: ${answeredCount}/${questions.length}).`;
+        statusBox.classList.remove("hidden");
+        return;
+      }
+
+      if (isSubmitted) return;
+
+      const correctCount = Object.values(userAnswers).filter((a) => a.isCorrect).length;
+      const detailsList = questions.map((q) => {
+        const ans = userAnswers[q.id];
+        return `${q.id}:${ans.chosen.toUpperCase()}(${ans.isCorrect ? "OK" : "Falsch->" + q.correct.toUpperCase()})`;
+      });
+
+      const payload = {
+        nombre: studentName,
+        puntuacion: `${correctCount} / ${questions.length}`,
+        detalles: `Johanna B1 | ${detailsList.join(", ")}`
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Wird gesendet...`;
+
+      try {
+        await fetch(SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        isSubmitted = true;
+        submitBtn.innerHTML = `<i class="fa-solid fa-check"></i> Gesendet`;
+        statusBox.className = "mt-4 p-4 rounded-xl text-sm font-medium bg-emerald-50 border border-emerald-200 text-emerald-900";
+        statusBox.innerHTML = `<i class="fa-solid fa-circle-check mr-1.5"></i> Vielen Dank, <strong>${escapeHtml(studentName)}</strong>! Ihr Ergebnis (<strong>${correctCount} / ${questions.length} Punkte</strong>) wurde erfolgreich übermittelt.`;
+        statusBox.classList.remove("hidden");
+      } catch (err) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Ergebnisse senden`;
+        statusBox.className = "mt-4 p-4 rounded-xl text-sm font-medium bg-rose-50 border border-rose-200 text-rose-900";
+        statusBox.innerHTML = `<i class="fa-solid fa-circle-xmark mr-1.5"></i> Fehler beim Senden. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.`;
+        statusBox.classList.remove("hidden");
+      }
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, (m) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[m]));
+    }
+
+    renderQuestions();
+  </script>
+</body>
+</html>
